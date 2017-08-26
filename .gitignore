@@ -72,4 +72,6 @@ build/
 dist/
 staticfiles/
 
+elm.js
+
 .cache/
