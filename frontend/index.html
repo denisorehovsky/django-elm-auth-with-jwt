@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JWT Me</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.min.css">
+</head>
+<body>
+  <div id="main"></div>
+  <script src="elm.js"></script>
+  <script>
+    var app = Elm.Main.fullscreen(localStorage.token || null);
+
+    app.ports.storeToken.subscribe(function(token) {
+      localStorage.token = token;
+    });
+  </script>
+</body>
+</html>
