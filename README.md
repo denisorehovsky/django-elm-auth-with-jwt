@@ -46,7 +46,7 @@ Start up backend:
 ../backend ➜  python manage.py runserver
 ```
 
-Start up frontend using *elm-live*:
+Start up frontend using `elm-live`:
 
 ```zsh
 ../frontend ➜  elm-live --port=3000 --output=elm.js src/Main.elm --pushstate --open --debug
