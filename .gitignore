@@ -74,4 +74,6 @@ staticfiles/
 
 elm.js
 
+db.sqlite3
+
 .cache/
